@@ -3,6 +3,8 @@ Senzing integration in Databricks Spark workflows
 
 ## Requirements
 
+These tutorials were developed on MacOS with Python 3.13.
+
 Install the required Python modules with `pip install -r requirements.txt` (or use `uv` if you prefer).
 
 Spark requires Java 17 or 21. You can find more details in [the Apache Spark documentation](https://spark.apache.org/docs/latest/).
