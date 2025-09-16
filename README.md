@@ -91,3 +91,11 @@ use the versions specified in the `requirements.txt` file.
 
 If you experience gRPC errors, these may be due to an outdated
 Docker container.
+
+
+## Kudos
+
+Kudos for their help with this tutorial:
+[`@brianmacy`](https://github.com/brianmacy),
+[`@docktermj`](https://github.com/docktermj)
+
