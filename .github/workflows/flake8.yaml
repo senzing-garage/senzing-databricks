@@ -34,5 +34,5 @@ jobs:
         uses: py-actions/flake8@v2
         with:
           max-line-length: 88
-          path: src
+          path: .
           plugins: flake8-black

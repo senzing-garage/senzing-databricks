@@ -41,8 +41,7 @@ jobs:
 
       - name: Analysing the code with pylint
         run: |
-          # shellcheck disable=SC2046
-          pylint $(git ls-files '*.py' ':!:docs/source/*')
+          nbqa pylint .
 
   slack-notification:
     needs: [pylint]

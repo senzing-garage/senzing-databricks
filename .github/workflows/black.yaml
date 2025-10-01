@@ -42,4 +42,4 @@ jobs:
       - name: Run black testing
         run: |
           # shellcheck disable=SC2046
-          black .
+          nbqa black .

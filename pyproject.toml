@@ -77,6 +77,8 @@ lint = [
   "fpvs==0.3.0",
   "isort==6.0.1",
   "mypy==1.18.2",
+  "nbqa==1.9.1",
+  "nbqa[toolchain]==1.9.1",
   "pylint==3.3.8",
   "pylint-per-file-ignores==2.0.3",
 ]
