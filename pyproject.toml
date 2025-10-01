@@ -1,0 +1,121 @@
+[project]
+name = "senzing-databricks"
+version = "1.2.8"
+description = "TODO"
+authors = [{ name = "senzing", email = "support@senzing.com" }]
+readme = "README.md"
+requires-python = ">=3.13"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "icecream >= 2.1",
+  "ipywidgets >= 8.1",
+  "jupyterlab >= 4.4",
+  "jupyterlab-execute-time >= 3.2.0",
+  "pyspark >= 4.0",
+  "senzing_grpc == 0.5.11",
+  "watermark >= 2.5",
+]
+license = "Apache-2.0"
+license-files = [
+  "LICENSE",
+  ".github/senzing-corporate-contributor-license-agreement.pdf",
+  ".github/senzing-individual-contributor-license-agreement.pdf",
+]
+
+[project.urls]
+bugtracker = "https://github.com/senzing-garage/senzing-databricks/issues"
+changelog = "https://github.com/senzing-garage/senzing-databricks/blob/main/CHANGELOG.md"
+source = "https://github.com/senzing-garage/senzing-databricks"
+
+[build-system]
+requires = ["setuptools>=80", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[dependency-groups]
+all = [
+  { include-group = "development" },
+  { include-group = "documentation" },
+  { include-group = "lint" },
+  { include-group = "test" },
+]
+development = [
+  "icecream >= 2.1",
+  "ipywidgets >= 8.1",
+  "jupyterlab >= 4.4",
+  "jupyterlab-execute-time >= 3.2.0",
+  "pyspark >= 4.0",
+  "senzing_grpc == 0.5.11",
+  "watermark >= 2.5",
+]
+documentation = [
+  "autodocsumm==0.2.14; python_version > '3.11'",
+  "myst_parser==4.0.1; python_version > '3.11'",
+  "sphinx==8.2.3; python_version > '3.11'",
+  "sphinx-autodoc-typehints==3.1.0; python_version > '3.11'",
+  "sphinx-gallery==0.19.0; python_version > '3.11'",
+  "sphinx-jinja2-compat==0.4.1; python_version > '3.11'",
+  "sphinx-prompt==1.9.0; python_version > '3.11'",
+  "sphinx-rtd-theme==3.0.2; python_version > '3.11'",
+  "sphinx-tabs==3.4.*; python_version > '3.11'",
+  "sphinx-toolbox==4.0.0; python_version > '3.11'",
+  "sphinxcontrib-applehelp==2.0.0; python_version > '3.11'",
+  "sphinxcontrib-devhelp==2.0.0; python_version > '3.11'",
+  "sphinxcontrib-htmlhelp==2.1.0; python_version > '3.11'",
+  "sphinxcontrib-jquery==4.1; python_version > '3.11'",
+  "sphinxcontrib-jsmath==1.0.1; python_version > '3.11'",
+  "sphinxcontrib-qthelp==2.0.0; python_version > '3.11'",
+  "sphinxcontrib-serializinghtml==2.0.0; python_version > '3.11'",
+  "sphinxext-remoteliteralinclude==0.6.0; python_version > '3.11'",
+]
+lint = [
+  "bandit==1.8.6",
+  "black==25.9.0",
+  "flake8==7.3.0",
+  "fpvs==0.3.0",
+  "isort==6.0.1",
+  "mypy==1.18.2",
+  "nbqa==1.9.1",
+  "nbqa[toolchain]==1.9.1",
+  "pylint==3.3.8",
+  "pylint-per-file-ignores==2.0.3",
+]
+test = ["pytest==8.4.2", "coverage==7.10.7"]
+
+[tool.bandit]
+skips = ["B101"]
+
+[tool.black]
+line-length = 120
+
+[tool.flake8]
+extend-ignore = ["E203", "E501", "E704", "W503"]
+max-line-length = 120
+
+[tool.isort]
+profile = "black"
+
+[[tool.mypy.overrides]]
+module = "senzing_abstract.szengineflags.*"
+ignore_missing_imports = "true"
+warn_unused_ignores = "false"
+
+[[tool.mypy.overrides]]
+module = "pytest_schema.*"
+ignore_missing_imports = "true"
+
+[tool.pylint]
+ignored-argument-names = "args|kwargs"
+disable = [
+  "broad-except",
+  "consider-using-f-string",
+  "line-too-long",
+  "too-many-branches",
+  "too-many-locals",
+]
+
+good-names = ["senzing-databricks"]
+ignore = ["__init__.py", "docs/source/conf.py"]
+notes = ["FIXME"]
