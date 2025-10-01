@@ -82,11 +82,6 @@ lint = [
 ]
 test = ["pytest==8.4.2", "coverage==7.10.7"]
 
-[tool.setuptools.packages.find]
-where = ["src"]
-
-[tool.setuptools_scm]
-
 [tool.bandit]
 skips = ["B101"]
 
@@ -99,7 +94,6 @@ max-line-length = 120
 
 [tool.isort]
 profile = "black"
-src_paths = ["examples", "src", "tests"]
 
 [[tool.mypy.overrides]]
 module = "senzing_abstract.szengineflags.*"
