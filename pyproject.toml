@@ -30,9 +30,6 @@ bugtracker = "https://github.com/senzing-garage/senzing-databricks/issues"
 changelog = "https://github.com/senzing-garage/senzing-databricks/blob/main/CHANGELOG.md"
 source = "https://github.com/senzing-garage/senzing-databricks"
 
-[project.entry-points."console.scripts"]
-senzing-databricks = "senzing-databricks.main_entry:main"
-
 [build-system]
 requires = ["setuptools>=80", "wheel"]
 build-backend = "setuptools.build_meta"

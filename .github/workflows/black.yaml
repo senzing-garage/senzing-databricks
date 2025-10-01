@@ -37,8 +37,9 @@ jobs:
           echo "PATH=${PATH}" >> "${GITHUB_ENV}"
           python -m pip install --upgrade pip
           python -m pip install --group all .
+          python -m pip install black[jupyter]
 
       - name: Run black testing
         run: |
           # shellcheck disable=SC2046
-          black --diff --check $(git ls-files '*.py' ':!:docs/source/*')
+          black .
