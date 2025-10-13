@@ -15,7 +15,7 @@ dependencies = [
   "jupyterlab >= 4.4",
   "jupyterlab-execute-time >= 3.2.0",
   "pyspark >= 4.0",
-  "senzing_grpc == 0.5.11",
+  "senzing_grpc == 0.5.13",
   "watermark >= 2.5",
 ]
 license = "Apache-2.0"
@@ -47,7 +47,7 @@ development = [
   "jupyterlab >= 4.4",
   "jupyterlab-execute-time >= 3.2.0",
   "pyspark >= 4.0",
-  "senzing_grpc == 0.5.11",
+  "senzing_grpc == 0.5.13",
   "watermark >= 2.5",
 ]
 documentation = [
