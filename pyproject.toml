@@ -87,7 +87,7 @@ lint = [
   "types_grpcio >= 1.0",
   "types_requests >= 2.32",
 ]
-test = ["pytest==8.4.2", "coverage==7.10.7"]
+test = ["pytest==8.4.2", "coverage==7.11.0"]
 
 [tool.bandit]
 skips = ["B101"]
