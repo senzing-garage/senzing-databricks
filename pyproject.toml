@@ -82,7 +82,7 @@ lint = [
   "mypy==1.19.0",
   "nbqa==1.9.1",
   "nbqa[toolchain]==1.9.1",
-  "pylint==4.0.3",
+  "pylint==4.0.4",
   "pylint-per-file-ignores==3.2.0",
   "types_grpcio >= 1.0",
   "types_requests >= 2.32",
