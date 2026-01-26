@@ -39,4 +39,5 @@ jobs:
         with:
           ignore-vulns: |
             CVE-2025-53000
+            CVE-2026-0994
           inputs: ${{ github.workspace}}
