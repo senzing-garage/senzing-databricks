@@ -81,7 +81,7 @@ lint = [
   "black==26.1.0; python_version > '3.11'",
   "flake8==7.3.0",
   "isort==6.1.0; python_version <= '3.11'",
-  "isort==8.0.0; python_version > '3.11'",
+  "isort==8.0.1; python_version > '3.11'",
   "mypy==1.19.1",
   "nbqa==1.9.1",
   "nbqa[toolchain]==1.9.1",
