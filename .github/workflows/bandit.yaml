@@ -1,25 +1,19 @@
-name: bandit
+name: Bandit
 
 on:
-  push:
-    branches-ignore: [main]
   pull_request:
     branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
 
 permissions: {}
 
 jobs:
   bandit:
     permissions:
-      security-events: write
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        python-version: ["3.13"]
-
-    steps:
-      - name: Run Bandit Scan
-        uses: PyCQA/bandit-action@v1
-        with:
-          python-version: ${{ matrix.python-version }}
+      contents: read
+    uses: senzing-factory/build-resources/.github/workflows/bandit.yaml@v4
+    with:
+      targets: .
