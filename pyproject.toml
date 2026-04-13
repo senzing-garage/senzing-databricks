@@ -26,7 +26,7 @@ dependencies = [
   "ipywidgets >= 8.1",
   "jupyterlab >= 4.4",
   "jupyterlab-execute-time >= 3.2.0",
-  "watermark >= 2.5",
+  "watermark >= 2.6.0",
 ]
 
 [project.urls]
@@ -52,7 +52,7 @@ development = [
   "jupyterlab-execute-time >= 3.2.0",
   "pyspark >= 4.0",
   "senzing_grpc == 0.5.13",
-  "watermark >= 2.5",
+  "watermark >= 2.6.0",
 ]
 documentation = [
   "autodocsumm",
