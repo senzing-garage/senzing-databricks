@@ -90,7 +90,7 @@ lint = [
   "pylint==3.3.9; python_version <= '3.11'",
   "pylint==4.0.5; python_version > '3.11'",
   "types_grpcio >= 1.0",
-  "types_requests >= 2.32",
+  "types_requests >= 2.32.4.20260107",
 ]
 test = [
   "pytest==8.4.2; python_version <= '3.11'",
