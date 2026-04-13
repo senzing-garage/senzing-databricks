@@ -25,7 +25,7 @@ dependencies = [
   "icecream >= 2.1",
   "ipywidgets >= 8.1.8",
   "jupyterlab >= 4.4",
-  "jupyterlab-execute-time >= 3.2.0",
+  "jupyterlab-execute-time >= 3.3.0",
   "watermark >= 2.6.0",
 ]
 
@@ -49,7 +49,7 @@ development = [
   "icecream >= 2.1",
   "ipywidgets >= 8.1.8",
   "jupyterlab >= 4.4",
-  "jupyterlab-execute-time >= 3.2.0",
+  "jupyterlab-execute-time >= 3.3.0",
   "pyspark >= 4.0",
   "senzing_grpc == 0.5.13",
   "watermark >= 2.6.0",
