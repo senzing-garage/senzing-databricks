@@ -197,7 +197,8 @@
     "virtualenv",
     "vulns",
     "WATCHLIST",
-    "XLITERATOR"
+    "XLITERATOR",
+    "zizmor"
   ],
   "ignorePaths": [
     ".git/**",
