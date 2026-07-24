@@ -96,7 +96,7 @@ test = [
   "pytest==8.4.2; python_version <= '3.11'",
   "pytest==9.1.1; python_version > '3.11'",
   "coverage==7.10.7; python_version <= '3.11'",
-  "coverage==7.14.3; python_version > '3.11'",
+  "coverage==7.15.0; python_version > '3.11'",
 ]
 
 [tool.bandit]
@@ -136,6 +136,11 @@ disable = [
 good-names = ["senzing-databricks"]
 ignore = ["__init__.py", "docs/source/conf.py"]
 notes = ["FIXME"]
+
+# pyspark exposes SparkSession.builder through a custom class-level property
+# descriptor, which pylint infers as a plain method, so every builder call
+# looks like a missing member (E1101).
+generated-members = ['(.*\.)?SparkSession\.builder\..*']
 
 [tool.setuptools]
 py-modules = []
