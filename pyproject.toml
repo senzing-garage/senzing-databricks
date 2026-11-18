@@ -19,7 +19,7 @@ classifiers = [
 ]
 
 dependencies = [
-  "senzing_grpc == 0.5.13",
+  "senzing_grpc == 0.5.14",
   "pyspark >= 4.0",
 
   "icecream >= 2.1",
@@ -51,7 +51,7 @@ development = [
   "jupyterlab >= 4.4",
   "jupyterlab-execute-time >= 3.3.0",
   "pyspark >= 4.0",
-  "senzing_grpc == 0.5.13",
+  "senzing_grpc == 0.5.14",
   "watermark >= 2.6.0",
 ]
 documentation = [
